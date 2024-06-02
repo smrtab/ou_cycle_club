@@ -91,16 +91,14 @@ a:hover {
     color: gray;
     font-size: 12px;
 }
-input[type="date"] {
-    &::-webkit-datetime-edit-text,
-    &::-webkit-datetime-edit-month-field,
-    &::-webkit-datetime-edit-day-field,
-    &::-webkit-datetime-edit-year-field,
-    &::-webkit-inner-spin-button {
-        opacity: 0.5;
-        color: gray;
-        font-size: 12px;
-    }
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field,
+input[type="date"]::-webkit-inner-spin-button {
+    opacity: 0.5;
+    color: gray;
+    font-size: 12px;
 }
 
 /*
@@ -116,30 +114,29 @@ header {
 header > div {
     display: inline-block;
 }
+
 #admin_profile {
     display: inline-block;
-
-    img {
-        border: 1px dotted silver;
-    }
-    p {
-        margin: 5px 0;
-    }
 }
-#menu {
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    ul li {
-        margin: 0;
-        padding: 0 10px 0 0;
-    }
-    .active {
-        text-decoration: none;
-        color: black;
-    }
+#admin_profile img {
+    border: 1px dotted silver;
+}
+#admin_profile p {
+    margin: 5px 0;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu ul li {
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+#menu .active {
+    text-decoration: none;
+    color: black;
 }
 
 .flex-row-2 {
@@ -148,38 +145,31 @@ header > div {
     gap: 0.5rem;
 }
 
-#info-form {
-    fieldset {
-        background-color: #FBFBFB;
-        padding: 16px;
-        border: 1px dotted #C0C0C0;
-        margin-bottom: 10px;
-        border-radius: 3px;
+#info-form fieldset {
+    background-color: #FBFBFB;
+    padding: 16px;
+    border: 1px dotted #C0C0C0;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
 
-        legend {
-            padding: 0 10px;
-        }
+#info-form fieldset legend {
+    padding: 0 10px;
+}
+#info-form fieldset label {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0 5px 0;
+}
 
-        label {
-            width: 100%;
-            display: inline-block;
-            margin: 10px 0 5px 0;
-        }
-    }
-
-    input, textarea, select {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 5px 10px;
-        border: 1px solid #C0C0C0;
-        border-radius: 3px;
-    }
-
-    .radio-group {
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-    }
+#info-form input,
+#info-form textarea,
+#info-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: 1px solid #C0C0C0;
+    border-radius: 3px;
 }
 
 /*
