@@ -21,6 +21,23 @@ a:hover {
     text-decoration: none;
 }
 
+::placeholder { /* Firefox, Chrome, Opera */
+    opacity: 0.5;
+    color: gray;
+    font-size: 12px;
+}
+input[type="date"] {
+    &::-webkit-datetime-edit-text,
+    &::-webkit-datetime-edit-month-field,
+    &::-webkit-datetime-edit-day-field,
+    &::-webkit-datetime-edit-year-field,
+    &::-webkit-inner-spin-button {
+        opacity: 0.5;
+        color: gray;
+        font-size: 12px;
+    }
+}
+
 /*
 The header contains menu.
 */
@@ -69,20 +86,37 @@ header {
     gap: 0.5rem;
 }
 
-::placeholder { /* Firefox, Chrome, Opera */
-    opacity: 0.5;
-    color: gray;
-    font-size: 12px;
-}
-input[type="date"] {
-    &::-webkit-datetime-edit-text,
-    &::-webkit-datetime-edit-month-field,
-    &::-webkit-datetime-edit-day-field,
-    &::-webkit-datetime-edit-year-field,
-    &::-webkit-inner-spin-button {
-        opacity: 0.5;
-        color: gray;
-        font-size: 12px;
+#info-form {
+    fieldset {
+        background-color: #FBFBFB;
+        padding: 16px;
+        border: 1px dotted #C0C0C0;
+        margin-bottom: 10px;
+        border-radius: 3px;
+
+        legend {
+            padding: 0 10px;
+        }
+
+        label {
+            width: 100%;
+            display: inline-block;
+            margin: 10px 0 5px 0;
+        }
+    }
+
+    input, textarea, select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        border: 1px solid #C0C0C0;
+        border-radius: 3px;
+    }
+
+    .radio-group {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
     }
 }
 
