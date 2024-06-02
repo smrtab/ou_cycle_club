@@ -8,7 +8,18 @@ Devices with screens of up to 520px
 */
 @media only screen
 and (max-width : 520px) {
-
+    html {
+        width: 300px;
+    }
+    #admin_profile {
+        width: 100%;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px dotted silver;
+    }
+    .flex-row-2 > * {
+        flex: 1 1 calc(100%);
+    }
 }
 
 /*
@@ -19,17 +30,41 @@ The news sections is placed bellow the gallery
 @media only screen
 and (min-width : 520px)
 and (max-width : 1024px) {
-
+    html {
+        width: 520px;
+    }
+    #admin_profile {
+        width: 100%;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px dotted silver;
+    }
+    .flex-row-2 > * {
+        flex: 1 1 calc(100%);
+    }
 }
 
 /* Desktops and laptops with screens of 1024px or greater*/
 @media only screen
 and (min-width : 1024px) {
-
+    html {
+        width: 1024px;
+    }
+    #header {
+        width: 780px;
+    }
+    #admin_profile {
+        width: 230px;
+    }
+    #menu ul li {
+        display: inline-block;
+    }
+    .flex-row-2 > * {
+        flex: 1 1 calc(100% / 2 - 1.5rem);
+    }
 }
 
 html {
-    width: 1024px;
     margin: 0 auto;
     font-size: 14px;
     font-family: Arial, serif;
@@ -77,13 +112,11 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px dotted #000000;
-    > div {
-        width: 780px;
-        display: inline-block;
-    }
+}
+header > div {
+    display: inline-block;
 }
 #admin_profile {
-    width: 230px;
     display: inline-block;
 
     img {
@@ -100,7 +133,6 @@ header {
         padding: 0;
     }
     ul li {
-        display: inline-block;
         margin: 0;
         padding: 0 10px 0 0;
     }
@@ -114,9 +146,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-}
-.flex-row-2 > * {
-    flex: 1 1 calc(100% / 2 - 1.5rem);
 }
 
 #info-form {
