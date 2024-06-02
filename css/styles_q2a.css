@@ -1,0 +1,81 @@
+html {
+    width: 1024px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: Arial, serif;
+    color: #333333;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:link, a:visited {
+    color: #049ECF;
+    text-decoration: underline;
+    font-size: 1em;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/*
+The header contains menu.
+*/
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #000000;
+    > div {
+        width: 780px;
+        display: inline-block;
+    }
+}
+#admin_profile {
+    width: 230px;
+    display: inline-block;
+
+    img {
+        border: 1px dotted silver;
+    }
+    p {
+        margin: 5px 0;
+    }
+}
+#menu {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 10px 0 0;
+    }
+    .active {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+::placeholder { /* Firefox, Chrome, Opera */
+    opacity: 0.5;
+    color: gray;
+    font-size: 12px;
+}
+input[type="date"] {
+    &::-webkit-datetime-edit-text,
+    &::-webkit-datetime-edit-month-field,
+    &::-webkit-datetime-edit-day-field,
+    &::-webkit-datetime-edit-year-field,
+    &::-webkit-inner-spin-button {
+        opacity: 0.5;
+        color: gray;
+        font-size: 12px;
+    }
+}
