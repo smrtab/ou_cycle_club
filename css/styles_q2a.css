@@ -85,6 +85,9 @@ header {
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+.flex-row-2 > * {
+    flex: 1 1 calc(100% / 2 - 1.5rem);
+}
 
 #info-form {
     fieldset {
