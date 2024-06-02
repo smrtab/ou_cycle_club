@@ -1,3 +1,33 @@
+/*
+The website must also take into consideration mobile devices with displays of different sizes.
+For the website, 3 groups of screens are taken into account.
+*/
+
+/*
+Devices with screens of up to 520px
+*/
+@media only screen
+and (max-width : 520px) {
+
+}
+
+/*
+Devices with screens of between 520px and 1024px.
+Gallery shows two pictures pro row.
+The news sections is placed bellow the gallery
+*/
+@media only screen
+and (min-width : 520px)
+and (max-width : 1024px) {
+
+}
+
+/* Desktops and laptops with screens of 1024px or greater*/
+@media only screen
+and (min-width : 1024px) {
+
+}
+
 html {
     width: 1024px;
     margin: 0 auto;
