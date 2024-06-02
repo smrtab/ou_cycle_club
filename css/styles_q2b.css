@@ -1,0 +1,134 @@
+html {
+    width: 1024px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: Arial, serif;
+    color: #333333;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:link, a:visited {
+    color: #049ECF;
+    text-decoration: underline;
+    font-size: 1em;
+}
+a:hover {
+    text-decoration: none;
+}
+
+::placeholder { /* Firefox, Chrome, Opera */
+    opacity: 0.5;
+    color: gray;
+    font-size: 12px;
+}
+input[type="date"] {
+    &::-webkit-datetime-edit-text,
+    &::-webkit-datetime-edit-month-field,
+    &::-webkit-datetime-edit-day-field,
+    &::-webkit-datetime-edit-year-field,
+    &::-webkit-inner-spin-button {
+        opacity: 0.5;
+        color: gray;
+        font-size: 12px;
+    }
+}
+
+/*
+The header contains menu.
+*/
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #000000;
+    > div {
+        width: 780px;
+        display: inline-block;
+    }
+}
+#admin_profile {
+    width: 230px;
+    display: inline-block;
+
+    img {
+        border: 1px dotted silver;
+    }
+    p {
+        margin: 5px 0;
+    }
+}
+#menu {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 10px 0 0;
+    }
+    .active {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.flex-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.flex-row-2 > * {
+    flex: 1 1 calc(100% / 2 - 1.5rem);
+}
+
+#info-form {
+    fieldset {
+        background-color: #FBFBFB;
+        padding: 16px;
+        border: 1px dotted #C0C0C0;
+        margin-bottom: 10px;
+        border-radius: 3px;
+
+        legend {
+            padding: 0 10px;
+        }
+
+        label {
+            width: 100%;
+            display: inline-block;
+            margin: 10px 0 5px 0;
+        }
+    }
+
+    input, textarea, select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        border: 1px solid #C0C0C0;
+        border-radius: 3px;
+    }
+
+    .radio-group {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*
+Styles for generic footer
+*/
+footer {
+    font-size: 0.8em;
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px dotted #000000;
+}
