@@ -63,6 +63,12 @@ header {
     }
 }
 
+.flex-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 ::placeholder { /* Firefox, Chrome, Opera */
     opacity: 0.5;
     color: gray;
@@ -78,4 +84,14 @@ input[type="date"] {
         color: gray;
         font-size: 12px;
     }
+}
+
+/*
+Styles for generic footer
+*/
+footer {
+    font-size: 0.8em;
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px dotted #000000;
 }
